@@ -111,6 +111,9 @@ class Application(Frame):
             command=self.send_sms, height=2, width=12)
         self.sms_button.grid(row=5, column=3, sticky=W)
 
+        self.calc_button = Button(self, text="calculator",
+            command=self.calculator, height=2, width=12)
+        self.calc_button.grid(row=1, column=4, sticky=W)
 
 ###############################################################################
 
@@ -198,6 +201,9 @@ class Application(Frame):
         os.system("start contacts.txt")
         os.system("python send_sms.py")
 
+    def calculator(self):
+        os.system("cd C:\\Users\\liamh\\Desktop\\Scripts")
+        os.system("python calculator.py")
 ###############################################################################
 
 root = Tk()
