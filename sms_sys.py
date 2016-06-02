@@ -54,7 +54,7 @@ class Application(Frame):
         msg = self.message_entry.get()
 
         user = '17lheisler@fatherjudgestudent.com'
-        password = 'yohihey123'
+        password = ''
 
         global from_addr, server
         from_addr = '17lheisler@fatherjudgestudent.com'
